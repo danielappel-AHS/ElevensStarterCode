@@ -1,3 +1,5 @@
+package Activity03;
+
 /**
  * This class provides a convenient way to test shuffling methods.
  */
@@ -51,6 +53,21 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+                //Split into two 
+                int half = values.length/2;
+                
+                //Temp array to hold the shuffled cards
+                int[] shuffled = new int[values.length];
+                //First Half of cards into odd spots
+                for(int i = 0; i < values.length; i++) {
+                    if(i % 2 == 0) {
+                        shuffled[i] = values[i];
+                    }
+                    else {
+                        shuffled[half + i] = values[i];
+                    }
+                }
+            
 	}
 
 	/**
