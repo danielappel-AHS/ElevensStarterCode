@@ -38,6 +38,8 @@ public class Card {
 	this.rank = cardRank;
         this.suit = cardSuit;
         this.pointValue = cardPointValue;
+        System.out.println("New Code");
+        
         }
         
 
